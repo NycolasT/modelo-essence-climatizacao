@@ -1,0 +1,114 @@
+/* =========================================
+   RESPONSIVIDADE (TABLETS E CELULARES)
+   ========================================= */
+
+@media (max-width: 1024px) {
+  :root {
+    --container-width: 90%;
+    --section-padding: 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--bg-white);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    padding: 40px;
+    flex-direction: column;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .btn-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-content p {
+    margin: 0 auto 30px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-img,
+  .about-text {
+    width: 100%;
+  }
+
+  .about-img {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-contact p {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-whatsapp {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

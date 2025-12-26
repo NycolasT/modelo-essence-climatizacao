@@ -1,0 +1,18 @@
+:root {
+  /* CORES*/
+  --primary-color: #0056b3;
+  --primary-hover: #004494;
+  --secondary-color: #00a8cc;
+  --bg-light: #f4f7f6;
+  --bg-white: #ffffff;
+  --text-color: #333333;
+  --text-light: #666666;
+
+  /* FONTES*/
+  --font-main: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* TAMANHOS */
+  --container-width: 1100px;
+  --header-height: 70px;
+  --section-padding: 80px 0;
+}
